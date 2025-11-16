@@ -11,11 +11,6 @@ public class Order
 
     Order (Builder builder)
     {
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            Thread.currentThread().interrupt();
-        }
         this.items = builder.items;
         this.deliveryAddress = builder.deliveryAddress;
         this.totalAmount = builder.totalAmount;
